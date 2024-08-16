@@ -57,15 +57,94 @@ void setup() {
     fuzzy->addFuzzyOutput(stress_level);
 
     // Define fuzzy rules
+    //rule1
     FuzzyRuleAntecedent* ifGsrLowAndTempLowAndHrLow = new FuzzyRuleAntecedent();
     ifGsrLowAndTempLowAndHrLow->joinWithAND(gsrLow, tempLow);
-    ifGsrLowAndTempLowAndHrLow->joinWithAND(ifGsrLowAndTempLowAndHrLow, hrLow);
+    ifGsrLowAndTempLowAndHrLow->joinWithAND(ifGsrLowAndTempLowAndHrLow, hrMedium);
 
     FuzzyRuleConsequent* thenRelax = new FuzzyRuleConsequent();
     thenRelax->addOutput(relax);
 
     FuzzyRule* fuzzyRule1 = new FuzzyRule(1, ifGsrLowAndTempLowAndHrLow, thenRelax);
     fuzzy->addFuzzyRule(fuzzyRule1);
+
+    //rule2
+    FuzzyRuleAntecedent* ifGsrLowAndTempLowAndHrMid = new FuzzyRuleAntecedent();
+    ifGsrLowAndTempLowAndHrMid->joinWithAND(gsrLow, tempLow);
+    ifGsrLowAndTempLowAndHrMid->joinWithAND(ifGsrLowAndTempLowAndHrMid, hrLow);
+
+    FuzzyRuleConsequent* thenAnxious = new FuzzyRuleConsequent();
+    thenAnxious->addOutput(anxious);
+
+    FuzzyRule* fuzzyRule2 = new FuzzyRule(2,  ifGsrLowAndTempLowAndHrMid, thenAnxious);
+    fuzzy->addFuzzyRule(fuzzyRule2);
+
+    //rule3
+    FuzzyRuleAntecedent* ifGsrLowAndTempLowAndHrHigh = new FuzzyRuleAntecedent();
+    ifGsrLowAndTempLowAndHrHigh->joinWithAND(gsrLow, tempLow);
+    ifGsrLowAndTempLowAndHrHigh->joinWithAND(ifGsrLowAndTempLowAndHrHigh, hrHigh);
+
+    FuzzyRuleConsequent* thenAnxious = new FuzzyRuleConsequent();
+    thenAnxious->addOutput(anxious);
+
+    FuzzyRule* fuzzyRule3 = new FuzzyRule(3,  ifGsrLowAndTempLowAndHrHigh, thenAnxious);
+    fuzzy->addFuzzyRule(fuzzyRule3);
+
+    //rule4
+    FuzzyRuleAntecedent* ifGsrLowAndTempLowAndHrVeryHigh = new FuzzyRuleAntecedent();
+    ifGsrLowAndTempLowAndHrVeryHigh->joinWithAND(gsrLow, tempLow);
+    ifGsrLowAndTempLowAndHrVeryHigh->joinWithAND(ifGsrLowAndTempLowAndHrVeryHigh, hrVeryHigh);
+
+    FuzzyRuleConsequent* thenAnxious = new FuzzyRuleConsequent();
+    thenAnxious->addOutput(anxious);
+
+    FuzzyRule* fuzzyRule4 = new FuzzyRule(4,  ifGsrLowAndTempLowAndHrVeryHigh, thenAnxious);
+    fuzzy->addFuzzyRule(fuzzyRule4);
+
+    //rule5
+
+    FuzzyRuleAntecedent* ifGsrLowAndTempMidAndHrLow = new FuzzyRuleAntecedent();
+    ifGsrLowAndTempMidAndHrLow->joinWithAND(gsrLow, tempMedium);
+    ifGsrLowAndTempMidAndHrLow->joinWithAND(ifGsrLowAndTempMidAndHrLow, hrLow);
+
+    FuzzyRuleConsequent* thenAnxious = new FuzzyRuleConsequent();
+    thenRelax->addOutput(relax);
+
+    FuzzyRule* fuzzyRule5 = new FuzzyRule(5,  ifGsrLowAndTempMidAndHrLow, thenRelax);
+    fuzzy->addFuzzyRule(fuzzyRule5);
+
+    //rule6
+    FuzzyRuleAntecedent* ifGsrLowAndTempMidAndHrMid = new FuzzyRuleAntecedent();
+    ifGsrLowAndTempMidAndHrMid->joinWithAND(gsrLow, tempMedium);
+    ifGsrLowAndTempMidAndHrMid->joinWithAND(ifGsrLowAndTempMidAndHrMid, hrMedium);
+
+    FuzzyRuleConsequent* thenCalm = new FuzzyRuleConsequent();
+    thenCalm->addOutput(calm);
+
+    FuzzyRule* fuzzyRule6 = new FuzzyRule(6,  ifGsrLowAndTempLowAndHrVeryHigh, thenCalm);
+    fuzzy->addFuzzyRule(fuzzyRule6);
+
+    // rule7
+    FuzzyRuleAntecedent* ifGsrLowAndTempMidAndHrHigh = new FuzzyRuleAntecedent();
+    ifGsrLowAndTempMidAndHrHigh->joinWithAND(gsrLow, tempMedium);
+    ifGsrLowAndTempMidAndHrHigh->joinWithAND(ifGsrLowAndTempMidAndHrHigh, hrHigh);
+
+    FuzzyRuleConsequent* thenAnxious = new FuzzyRuleConsequent();
+    thenAnxious->addOutput(anxious);
+
+    FuzzyRule* fuzzyRule7 = new FuzzyRule(7,  ifGsrLowAndTempMidAndHrHigh, thenAnxious);
+    fuzzy->addFuzzyRule(fuzzyRule7);
+
+    //rule8
+    FuzzyRuleAntecedent* ifGsrLowAndTempMidAndHrVeryHigh = new FuzzyRuleAntecedent();
+    ifGsrLowAndTempMidAndHrVeryHigh->joinWithAND(gsrLow, tempMedium);
+    ifGsrLowAndTempMidAndHrVeryHigh->joinWithAND(ifGsrLowAndTempMidAndHrVeryHigh, hrVeryHigh);
+
+    FuzzyRuleConsequent* thenAnxious = new FuzzyRuleConsequent();
+    thenAnxious->addOutput(anxious);
+
+    FuzzyRule* fuzzyRule8 = new FuzzyRule(8,  ifGsrLowAndTempLowAndHrVeryHigh, thenAnxious);
+    fuzzy->addFuzzyRule(fuzzyRule8);
 
     // You can add more fuzzy rules as necessary
 }
