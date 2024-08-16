@@ -57,6 +57,7 @@ void setup() {
     fuzzy->addFuzzyOutput(stress_level);
 
     // Define fuzzy rules
+    
     //Rule 1: IF GSR is low AND body_temp is low AND heart_rate is low THEN stress_level is relax
     FuzzyRuleAntecedent* ifGsrLowAndTempLowAndHrLow = new FuzzyRuleAntecedent();
     ifGsrLowAndTempLowAndHrLow->joinWithAND(gsrLow, tempLow);
@@ -607,8 +608,6 @@ void setup() {
     fuzzy->addFuzzyRule(fuzzyRule64);
 
 
-
-    // You can add more fuzzy rules as necessary
 }
 
 void loop() {
