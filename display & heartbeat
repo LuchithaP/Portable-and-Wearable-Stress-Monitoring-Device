@@ -1,0 +1,51 @@
+#include <Wire.h>
+#include <Adafruit_SSD1306.h>
+#include <MAX30100_PulseOximeter.h>
+
+// OLED display settings
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+#define OLED_RESET    -1
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+// MAX30100 sensor
+PulseOximeter pox;
+
+void setup() {
+  Wire.begin();
+  Wire.setClock(100000); // Set I2C clock to 100kHz
+
+  // Initialize OLED
+  if (!display.begin(SSD1306_I2C_ADDRESS, SCREEN_WIDTH)) {
+    Serial.println(F("SSD1306 allocation failed"));
+    for (;;);
+  }
+  display.clearDisplay();
+  display.display();
+
+  // Initialize MAX30100
+  if (!pox.begin()) {
+    Serial.println("MAX30100 initialization failed");
+    for (;;);
+  }
+
+  // Example usage
+  pox.setOnBeatDetectedCallback(onBeatDetected);
+}
+
+void loop() {
+  pox.update();  // Update the MAX30100 sensor
+
+  // Example: Display heart rate on OLED
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(0, 0);
+  display.print("Heart Rate: ");
+  display.println(pox.getHeartRate());
+  display.display();
+}
+
+void onBeatDetected() {
+  Serial.println("Beat detected!");
+}
