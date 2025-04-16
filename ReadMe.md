@@ -54,13 +54,16 @@ This project was developed as part of the EN1190-Engineering Design Project. The
 - Low power consumption: 0.04W during normal operation
 - Working temperature: -30°C to 80°C
 
-![PCB Design]()
+## Shematic Design
+The schematic was designed using Altium Designer.
+
+![PCB Design](Images/schem.png)
 
 ## Enclosure Design
 
 The device features a custom 3D-printed enclosure designed for comfort and usability.
 
-![Enclosure Design]()
+![Enclosure Design](Images/enclosure.png)
 
 ## How It Works
 
@@ -79,7 +82,7 @@ The device uses an algorithm that analyzes data from multiple sensors to determi
 | Temperature (°C) | < 35 | 35 - 37 | 37 - 38.5 | > 38.5 |
 | Heart Rate (BPM) | 60 - 70 | 70 - 90 | 90 - 100 | > 180 |
 
-![Stress Algorithm]()
+
 
 ## Usage Notes
 
@@ -95,7 +98,7 @@ The PCB was designed using Altium Designer and features two separate units:
 - Power Supply Unit
 - Main Circuit
 
-![PCB Layout]()
+![PCB Layout](Images/pcb.png)
 
 ### Known Issues and Solutions
 During testing, we identified and resolved several issues:
@@ -106,17 +109,9 @@ During testing, we identified and resolved several issues:
 
 ## Team Members
 
-- **P.L.P. Perera**: Microcontroller Programming and Testing, Documentation, Assembling Components
+- **P.L.P. Perera**: Microcontroller Programming and Testing, Documentation, Assembling Components, PCB design
 - **S.R.N. Fernando**: Market Analysis, Enclosure Design, Assembling Components, Soldering
 - **G.M.L. Dulsara**: Microcontroller Programming and Testing, Documentation, Assembling Components, Market Analysis
 - **M.H.K. Yashodhara**: Microcontroller Programming and Debugging, Documentation, Budget Coordination, Assembling Components
 
-![Team Photo]()
 
-## License
-
-[Insert appropriate license information here]
-
-## Contact
-
-For questions or feedback, please contact [insert contact information].
