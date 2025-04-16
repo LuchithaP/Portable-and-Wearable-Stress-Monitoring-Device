@@ -1,0 +1,46 @@
+Altium Designer Pick and Place Locations
+C:\Users\Public\Documents\Altium\PCB_Project_stress\Project Outputs for PCB_Project_stress\Pick Place for PCB2.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       25/05/24
+Time:       16:43
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+"Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
+"U2","MCP73831T-2ACI/OT","TopLayer","FP-C04-091-OT-IPC_B","285.001","575.000","0","IC CONTROLLR LI-ION 4.2V SOT23-5"
+"U1","ESP8266-12E/ESP-12E","TopLayer","XCVR_ESP8266-12E/ESP-12E","2291.418","919.724","90","This WiFi module has a 32-bit MCU micro and clock speeds supporting 80 MHz or 160 MHz. Supports the RTOS and integrated Wi-Fi MAC/BB/RF/PA/LNA, and has an on-board antenna."
+"SW2","PCM12SMTR","TopLayer","FP-PCM12SMTR-MFG","450.944","1639.547","180","SWITCH SLIDE SPDT 300MA 6V"
+"SW1","PCM12SMTR","TopLayer","FP-PCM12SMTR-MFG","145.453","1525.944","270","SWITCH SLIDE SPDT 300MA 6V"
+"Reset","ESE-20C421","TopLayer","FP-ESE-20C421-MFG","1340.000","615.000","0","SWITCH PUSH SPST-NO 0.1A 14V"
+"Regul","TC1262-3.3VDBTR","TopLayer","SOT-223-DB3_M","610.000","605.000","0","500mA Fixed Output CMOS LDO, 3-Pin SOT-223, Extended Temperature, Tape and Reel"
+"R13","2k","TopLayer","FP-AC0603-IPC_B","909.999","775.000","180","RES 2kO 1.00% 0.1W 0603"
+"R12","470","TopLayer","RESC2013X60X35LL10T20","65.000","738.504","270","Chip Resistor, 470 Ohm, +/- 1%, 125 mW, -55 to 155 degC, 0805 (2012 Metric), RoHS, Tape and Reel"
+"R11","RC0402FR-0747KL","TopLayer","RESC1005X40X25ML05T10","180.000","745.000","90",""
+"R10","RC0603FR-0715KL","TopLayer","RESC1608X55X25LL10T15","1759.410","500.000","180","Chip Resistor, 15 KOhm, +/- 1%, 0.1 W, -55 to 155 degC, 0603 (1608 Metric), RoHS, Tape and Reel"
+"R9","12k","TopLayer","FP-CRCW0603-e3-IPC_A","2042.102","500.000","180","RES Thick Film, 12kO, 1%, 0.1W, 100ppm/°C, 0603"
+"R8","22k","TopLayer","FP-CRCW0603-e3-IPC_B","2328.165","495.000","180","RES Thick Film, 22kO, 1%, 0.1W, 100ppm/°C, 0603"
+"R7","12k","TopLayer","FP-CRCW0603-e3-IPC_A","970.000","1310.000","0","RES Thick Film, 12kO, 1%, 0.1W, 100ppm/°C, 0603"
+"R6","12k","TopLayer","FP-CRCW0603-e3-IPC_A","2557.102","1325.000","0","RES Thick Film, 12kO, 1%, 0.1W, 100ppm/°C, 0603"
+"R5","12k","TopLayer","FP-CRCW0603-e3-IPC_A","2232.102","1335.000","180","RES Thick Film, 12kO, 1%, 0.1W, 100ppm/°C, 0603"
+"R4","12k","TopLayer","FP-CRCW0603-e3-IPC_A","1925.000","1335.000","180","RES Thick Film, 12kO, 1%, 0.1W, 100ppm/°C, 0603"
+"R3","22k","TopLayer","FP-CRCW0603-e3-IPC_B","1669.999","1340.000","180","RES Thick Film, 22kO, 1%, 0.1W, 100ppm/°C, 0603"
+"R2","330","TopLayer","FP-CRCW0402-e3-IPC_C","1220.000","1125.000","0","RES Thick Film, 330kO, 1%, 0.063W, 100ppm/°C, 0402"
+"R1","22k","TopLayer","FP-CRCW0603-e3-IPC_B","1490.000","930.000","180","RES Thick Film, 22kO, 1%, 0.1W, 100ppm/°C, 0603"
+"Q2","BC547C","TopLayer","ONSC-TO-92-3-29-11","1275.000","870.000","0","Amplifier Transistor, NPN Silicon, 3-Pin TO-92, Bulk Box"
+"Q1","BC547C","TopLayer","ONSC-TO-92-3-29-11","1460.000","1110.000","0","Amplifier Transistor, NPN Silicon, 3-Pin TO-92, Bulk Box"
+"P2","691701350011B","TopLayer","691701350011B","1695.000","1450.000","180",""
+"P1","691701350011B","TopLayer","691701350011B","1695.000","335.000","0",""
+"USB","MICROQTJ","TopLayer","SHOUHAN_MICROQTJ","205.807","186.260","270",""
+"FLS","ESE-20C421","TopLayer","FP-ESE-20C421-MFG","945.000","1025.000","0","SWITCH PUSH SPST-NO 0.1A 14V"
+"D1","150080RS75000","TopLayer","WL-SMCW_0805_150080xx75000","110.000","415.000","180",""
+"CN1","Battery Connector","TopLayer","FP-BM02B-PASS-1-TFT_LF_S-MFG","193.385","1160.000","270","CONN HEADER SMD 2POS 2MM"
+"C6","4.7 uF","TopLayer","FP-C0805C475K8PACTU-MFG","500.000","310.000","90","CAP CER 4.7UF 10V X5R 0805"
+"C5","10uf","TopLayer","FP-C1608-080-0_1-IPC_B","355.218","820.000","180","Multilayer Ceramic Capacitors 10µF ±10% 6.3V X5R SMD 0603"
+"C4","4.7 uF","TopLayer","FP-C0805C475K8PACTU-MFG","2604.528","490.000","180","CAP CER 4.7UF 10V X5R 0805"
+"C3","10uf","TopLayer","FP-C1608-080-0_1-IPC_B","360.000","395.218","270","Multilayer Ceramic Capacitors 10µF ±10% 6.3V X5R SMD 0603"
+"C2","C0402C104K4RACTU","TopLayer","FP-C0402-BB-MFG","70.748","575.000","180","CAP CER 0.1UF 16V X7R 0402"
+"C1","04025C471JAT2A","TopLayer","FP-0402-L_1_0_1-W_0_5_0_1-IPC_A","1075.000","606.672","90","General Purpose Ceramic Capacitor, 0402, 470pF, 5%, X7R, 15%, 50V"
