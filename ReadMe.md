@@ -2,7 +2,7 @@
 
 A wearable health monitoring system that tracks multiple physiological parameters to help users monitor and manage stress levels.
 
-![Device Image](Images/synth1)
+![Device Image](Images/synth1.png)
 
 ## Overview
 
@@ -25,7 +25,7 @@ This project was developed as part of the EN1190-Engineering Design Project. The
 - OLED Display (DM0037)
 - 3.7V 1000mAh Rechargeable LiPo Battery
 
-![Hardware Block Diagram]()
+![Hardware Block Diagram](Images/func.png)
 
 ### Hardware Specifications
 
