@@ -2,7 +2,7 @@
 
 A wearable health monitoring system that tracks multiple physiological parameters to help users monitor and manage stress levels.
 
-![Device Image]()
+![Device Image](Images/synth1)
 
 ## Overview
 
